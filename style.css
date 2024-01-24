@@ -1,0 +1,30 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+
+.main-cnt{
+    background-color: rgb(110, 75, 133);
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+}
+
+#board{
+    display: flex;
+    position: absolute;
+}
+
+#sb-map{
+    display: flex;
+    position: relative;
+    height: 80%;
+}
+
+#bg-map{
+    display: flex;
+    position: absolute;
+    height: 80%;
+}
