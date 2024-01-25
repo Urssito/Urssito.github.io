@@ -9,13 +9,19 @@ let initialY;
 bg.addEventListener("load",() => {
     canvas.setAttribute("width", bg.offsetWidth);
     canvas.setAttribute("height", bg.offsetHeight);
+    let base = new Image();
+    base.src = "/files/forest.png";
+    base.onload = () => {
+        context.drawImage(base, 0, 0);
+    }
 })
 
 const draw = (cursorX, cursorY) => {
     context.beginPath();
     context.moveTo(initialX, initialY);
-    context.lineWidth = 10;
+    context.lineWidth = 20;
     context.strokeStyle = "#000";
+    context.globalCompositeOperation = "destination-out";
     context.lineCap = "round";
     context.lineJoin = "round";
     context.lineTo(cursorX, cursorY);
@@ -38,7 +44,8 @@ const mouseMoving = (e) => {
         transparent += data[i] ? 0 : 1;
     }
     const percentage = transparent / pixels * 100;
-    console.log(percentage+"%")
+    const text = document.getElementById("percentage");
+    text.innerHTML = percentage.toString().match(/^-?\d+(?:\.\d{0,2})?/)[0] + "%";
 }
 
 canvas.addEventListener("mousedown", (e) => {

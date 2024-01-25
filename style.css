@@ -9,8 +9,8 @@ body{
     height: 100%;
     display: flex;
     justify-content: center;
-    align-items: end;
-    flex-direction: column-reverse;
+    align-items: center;
+    flex-direction: row;
 }
 
 #board{
@@ -21,7 +21,7 @@ body{
 
 #map-cnt{
     height: 100%;
-    width: 100%;
+    width: auto;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -39,4 +39,9 @@ body{
     position: absolute;
     height: 80%;
     pointer-events: none;
+    z-index: 5;
+}
+
+#percentage{
+    font-size: 83px;
 }
