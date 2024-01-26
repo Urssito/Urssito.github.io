@@ -7,6 +7,7 @@ let initialX;
 let initialY;
 
 bg.addEventListener("load",() => {
+    console.log("xd")
     const canvaWidth = bg.offsetWidth * 0.92;
     canvas.setAttribute("width", canvaWidth);
     canvas.setAttribute("height", bg.offsetHeight);
@@ -14,7 +15,8 @@ bg.addEventListener("load",() => {
     borders.style.width = canvaWidth + "px";
     borders.style.height = bg.offsetHeight + "px";
     let base = new Image();
-    base.src = "/files/forest.png";
+    bg.crossOrigin = "anonymous";
+    base.src = "files/forest.jpg";
     base.onload = () => {
         context.drawImage(base, 0, 0);
     }
@@ -36,7 +38,7 @@ const draw = (cursorX, cursorY) => {
 let B = false;
 
 const mouseMoving = (e) => {
-    console.log(B)
+    bg.crossOrigin = "anonymous";
     draw(e.offsetX, e.offsetY);
     const data = context
         .getImageData(0,0,canvas.width, canvas.height)
