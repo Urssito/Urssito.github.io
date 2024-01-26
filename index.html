@@ -5,16 +5,63 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kakuy to the moon</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="areas.css">
+    <link rel="stylesheet" href="borders.css">
 </head>
 <body>
-    <main class="main-cnt">
-        <div id="map-cnt">
-            <img id="sb-map" src="/files/subject.png" alt="">
-            <canvas id="board"></canvas>
-            <img id="bg-map" src="/files/background.png" alt="">
+    <main id="main-cnt">
+        <div id="app">
+            <div id="map-cnt">
+                <img id="sb-map" src="/files/subject.png" alt="">
+                <canvas id="board"></canvas>
+                <div id="borders">
+                    <div id="border-left">
+                        <div class="border" id="l-border-1"></div>
+                        <div class="border" id="l-border-2"></div>
+                        <div class="border" id="l-border-3"></div>
+                        <div class="border" id="l-border-4"></div>
+                        <div class="border" id="l-border-5"></div>
+                        <div class="border" id="l-border-6"></div>
+                        <div class="border" id="l-border-7"></div>
+                        <div class="border" id="l-border-8"></div>
+                        <div class="border" id="l-border-9"></div>
+                        <div class="border" id="l-border-10"></div>
+                        <div class="border" id="l-border-11"></div>
+                        <div class="border" id="l-border-12"></div>
+                    </div>
+                    <div id="border-right">
+                        <div class="border" id="r-border-1"></div>
+                        <div class="border" id="r-border-2"></div>
+                        <div class="border" id="r-border-3"></div>
+                        <div class="border" id="r-border-4"></div>
+                        <div class="border" id="r-border-5"></div>
+                        <div class="border" id="r-border-6"></div>
+                        <div class="border" id="r-border-7"></div>
+                        <div class="border" id="r-border-8"></div>
+                        <div class="border" id="r-border-9"></div>
+                        <div class="border" id="r-border-10"></div>
+                    </div>
+                </div>
+                <img id="bg-map" src="/files/background.png" alt="">
+            </div>
+            <div id="data">
+                <div class="data-box" id="deforested">
+                    <span class="data-text">Total Deforested Forests</span>
+                    <div class="data-number" id="percentage">0%</div>
+                </div>
+                <div class="data-box" id="hectares">
+                    <span class="data-text">Remaining Hectares</span>
+                    <div class="data-number" id="remaining-hectares">10792200</div>
+                </div>
+                <div class="data-box" id="CO2">
+                    <span class="data-text">CO2 Emission</span>
+                    <div class="data-number" id="CO2-emitted">0kg-m2</div>
+                </div>
+                <div class="data-box" id="Temperature">
+                    <span class="data-text">Local Temperature Rise</span>
+                    <div class="data-number" id="Temperature-rise">0K°</div>
+                </div>
+            </div>
         </div>
-        <span id="percentage">0%</span>
     </main>
     <script src="index.js"></script>
 </body>

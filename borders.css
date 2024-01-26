@@ -1,0 +1,135 @@
+#borders{
+    position: absolute;
+    z-index: 3;
+    display: flex;
+    flex-direction: row;
+    pointer-events: none;
+}
+
+#border-left, #border-right{
+    width: 50%;
+    height: 100%;
+    pointer-events: all;
+    display: flex;
+    flex-direction: column-reverse;
+    pointer-events: none;
+}
+
+#border-right{
+    align-items: end;
+}
+
+.border{
+    width: 100%;
+    pointer-events: all;
+}
+
+#l-border-1{
+    height: 4.9%;
+    width: 173%;
+}
+
+#l-border-2{
+    height: 5.2%;
+    width: 150%;
+}
+
+#l-border-3{
+    height: 4.9%;
+    width: 137%;
+}
+
+#l-border-4{
+    height: 2.9%;
+    width: 100%;
+}
+
+#l-border-5{
+    height: 1.9%;
+    width: 72%;
+}
+
+#l-border-6{
+    height: 15%;
+    width: 16%;
+}
+
+#l-border-7{
+    height: 18%;
+    width: 4.8%;
+}
+
+#l-border-8{
+    height: 11%;
+    width: 13%;
+}
+
+#l-border-9{
+    height: 11%;
+    width: 21%;
+}
+
+#l-border-10{
+    height: 11%;
+    width: 37%;
+}
+
+#l-border-11{
+    height: 10.5%;
+    width: 45%;
+}
+
+#l-border-12{
+    height: 3.8%;
+    width: 200%;
+}
+
+#r-border-1{
+    height: 3.8%;
+    width: 23.5%;
+}
+
+#r-border-2{
+    height: 3.8%;
+    width: 21.5%;
+}
+
+#r-border-3{
+    height: 3.8%;
+    width: 19.5%;
+}
+
+#r-border-4{
+    height: 5%;
+    width: 17.3%;
+}
+
+#r-border-5{
+    height: 5%;
+    width: 15.2%;
+}
+
+#r-border-6{
+    height: 5%;
+    width: 13%;
+}
+
+#r-border-7{
+    height: 5%;
+    width: 10%;
+}
+
+#r-border-8{
+    height: 5%;
+    width: 7%;
+}
+
+#r-border-9{
+    height: 5%;
+    width: 4%;
+}
+
+#r-border-10{
+    height: 5%;
+    width: 2%;
+}
