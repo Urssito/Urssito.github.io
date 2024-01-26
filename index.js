@@ -15,11 +15,12 @@ bg.addEventListener("load",() => {
     borders.style.width = canvaWidth + "px";
     borders.style.height = bg.offsetHeight + "px";
     let base = new Image();
-    bg.crossOrigin = "anonymous";
     base.src = "files/forest.jpg";
+    bg.crossOrigin = "anonymous";
     base.onload = () => {
         context.drawImage(base, 0, 0);
     }
+    bg.crossOrigin = "anonymous";
 })
 
 const draw = (cursorX, cursorY) => {
